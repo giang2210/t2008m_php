@@ -17,31 +17,27 @@
                 <a class="nav-link " aria-current="page" href="listProduct.php">Danh sách sản phẩm</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="newProduct.php">Thêm sản phẩm</a>
+                <a class="nav-link active" href="newProduct.php">Thêm mới 1 sản phẩm</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="editProduct.php">Sửa sản phẩm</a>
+                <a class="nav-link" href="listCategory.php">Danh sách các thể loại</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="listCategory.php">Danh sách thể loại</a>
+                <a class="nav-link" href="#">Thêm mới 1 thể loại</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Thêm thể loại</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sửa thể loại</a>
+                <a class="nav-link" href="cart.php">Giỏ hàng</a>
             </li>
         </ul>
     </div>
-    <h1 class="p-2" style="text-align: center">Thêm mới sản phẩm</h1>
-    <form>
+    <form action="save.php" method="POST">
         <div class="form-group" >
-            <input class="form-control input-lg m-3" id="inputlg" type="text" placeholder="Nhập tên sản phẩm..">
-            <input class="form-control input-lg m-3" id="inputlg" type="text"  placeholder="Nhập giá sản phẩm..">
-            <input class="form-control input-lg m-3" id="inputlg" type="text" placeholder="Mô tả sản phẩm..">
-            <input class="form-control input-lg m-3" id="inputlg" type="text" placeholder="Tên nhà cung cấp..">
+            <input name="ten" class="form-control input-lg m-3" id="inputlg" type="text" placeholder="Nhập tên sản phẩm...">
+            <input name="gia" class="form-control input-lg m-3" id="inputlg" type="number"  placeholder="Nhập giá sản phẩm...">
+            <input name="mota" class="form-control input-lg m-3" id="inputlg" type="text" placeholder="Mô tả sản phẩm ...">
+            <input name="tenncc" class="form-control input-lg m-3" id="inputlg" type="text" placeholder="Nhập tên nhà cung cấp ...">
         </div>
-        <button type="button" class="btn btn-success float-end">Thêm sản phẩm</button>
+        <button type="submit" class="btn btn-success float-end">Thêm sản phẩm</button>
     </form>
 </div>
 </body>
